@@ -42,8 +42,8 @@
         				<button type="submit" class="btn btn-default">Поиск</button>
       				</form>
       				<ul class="nav navbar-nav navbar-right">
-        				<li><a href="#">Вход</a></li>
-                <li><a href="#">Регистрация</a></li>
+        				<li><a href="javascript:PopUpShowLogin()">Вход</a></li>
+                <li><a href="javascript:PopUpShowRegister()">Регистрация</a></li>
       				</ul>
     			</div>
   			</div>
@@ -148,5 +148,70 @@
     </div>
   </div>
 
+  <div class="b-popup" id="login">
+    <div class="login-wrap">
+      <div class="login-html">
+        <button type="button" class="close" onClick='location.href="javascript:PopUpHide()"'>×</button>
+        <input id="tab-1" type="radio" name="tab" class="sign-in"><label for="tab-1" class="tab">Sign In</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+          <div class="login-form" id="login-form">
+            <div class="sign-in-htm">
+              <div class="group">
+                <span>Username</span>
+                <input class="text" type="text">
+
+                <span>Password</span>
+                <input class="text" type="password" data-type="password">
+
+                <input type="checkbox">
+                <label>Keep me Signed in</label>
+
+                <button type="button" class="btn btn-primary btn-lg btn-block" onClick='location.href="javascript:PopUpHide()"'>Sign In</button>
+              </div>
+              <div class="hr">
+              </div>
+              <div class="foot-lnk">
+                <a href="#forgot">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="sign-up-htm">
+              <div class="group">
+                <span>Username</span>
+                <input class="text" type="text">
+
+                <span>Password</span>
+                <input class="text" type="password" data-type="password">
+
+                <span>Repeat Password</span>
+                <input class="text" type="password" data-type="password">
+
+                <span>Email Address</span>
+                <input class="text" type="text">
+  
+                <button type="button" class="btn btn-primary btn-lg btn-block" onClick='location.href="javascript:PopUpHide()"'>Sign Up</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+        $(document).ready(function(){   
+            PopUpHide();
+        });
+        function PopUpShowLogin(){
+            $("#login").show();
+            $('#tab-1').prop('checked',true);
+        }
+        function PopUpShowRegister(){
+            $("#login").show();
+            $('#tab-2').prop('checked',true);
+        }
+        function PopUpHide(){
+            $("#login").hide();
+        }
+    </script>
   </body>
 </html>

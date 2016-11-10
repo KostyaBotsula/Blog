@@ -14,10 +14,6 @@
   font-family: 'Museo';
   src: url('../fonts/exljbris - Museo Cyrl 900.otf');
 }
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu-Medium.ttf');
-}
 
 
 article,
@@ -758,7 +754,7 @@ pre code {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  width: 1020px;
+  max-width: 1020px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2091,8 +2087,8 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #1161ee;
+  border-color: #0b4dbf;
 }
 
 .btn-primary:hover,
@@ -2101,8 +2097,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #3276b1;
-  border-color: #285e8e;
+  background-color: #0b4dbf;
+  border-color: #093b91;
 }
 
 .btn-primary:active,
@@ -4152,7 +4148,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .container > .navbar-header,
   .container > .navbar-collapse {
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 1%;
   }
 }
 
@@ -5575,13 +5571,11 @@ a.list-group-item:focus {
 
 .close {
   float: right;
-  font-size: 21px;
+  font-size: 30px;
   font-weight: bold;
   line-height: 1;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
+  color: #ddd;
+  text-shadow: 0 1px 0 #333;
 }
 
 .close:hover,
