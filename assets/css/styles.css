@@ -29,8 +29,13 @@ header, nav, article, aside, footer, hgroup, section { display: block }
   src: url('../fonts/Montserrat-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Museo';
+  src: url('../fonts/exljbris - Museo Cyrl 900.otf');
+}
+
 html {
-	font-size: 14px;
+	font-size: 0.9em;
   	-moz-osx-font-smoothing: grayscale;
   	-webkit-font-smoothing: antialiased;
   	min-width: 300px;
@@ -57,9 +62,72 @@ div, h2, p, figure {
   	padding: 0;
 }
 
+.wrap {
+  height: 100%;
+  width: 100%;
+  background-color: #edeef0;
+}
+
+.navbar-style {
+  color: #fff;
+  background-color: #6995c7;
+  border: 0;
+}
+
+.custom-navbar {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.custom-close {
+  color: #edeef0;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 2.5em;
+  opacity: 1;
+}
+
+.custom-button {
+  color: #fff;
+  background-color: #3e6da3;
+  border-color: #35649a;
+}
+
+.custom-button:focus,
+.custom-button.focus,
+.custom-button:hover,
+.custom-button:active,
+.custom-button.active {
+  color: #fff;
+  background-color: #35649a;
+  border-color: #2c5c92;
+}
+
+.custom-button:active:hover,
+.custom-button.active:hover,
+.custom-button:active:focus,
+.custom-button.active:focus {
+  color: #fff;
+  background-color: #214369;
+  border-color: #1e3c5d;
+}
+
+.login-form .custom-button{
+  margin-top: 10px;
+}
+
+.custom-navbar .navbar-brand{
+  font-family: 'Museo';
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+}
+
+
+.custom-navbar .navbar-nav > li > a{
+  color: #fff;
+}
+
 .main {
-  	margin: 0 auto;
-  	max-width: 1020px;
     padding-top: 50px;
 }
 
@@ -137,7 +205,7 @@ div, h2, p, figure {
   	margin-top: 10px;
 }
 
-.b-popup{
+.popup{
     width:100%;
     height:100%;
     background-color: rgba(0,0,0,0.5);
@@ -148,31 +216,46 @@ div, h2, p, figure {
 
 .text {
   border: none;
-  color: #fff;
+  color: #000;
   width: 100%;
   padding: 10px 20px;
   display: block;
-  height: 15px;
+  height: 28px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0);
+  background: #3e6da3;
+  border: 2px solid rgba(0, 0, 0, 0);
   overflow: hidden;
-  margin-bottom: 15px;
   transition: all 0.5s ease-in-out;
+  ::-webkit-input-placeholder { /* Chrome */
+    color: #fff;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+    opacity: 1;
+  }
+  :-moz-placeholder { /* Firefox 4 - 18 */
+    color: #fff;
+    opacity: 1;
+  }
+
 }
 
 .text:focus {
   outline: 0;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(36, 74, 117, 1);
   border-radius: 20px;
-  background: rgba(0, 0, 0, 0);
+  background: #fff;
 }
 
 .login-wrap{
   width:100%;
-  margin:auto;
+  margin: auto;
+  top:25%;
   max-width:525px;
-  min-height:520px;
+  min-height:500px;
   position:relative;
   box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
@@ -182,8 +265,8 @@ div, h2, p, figure {
   width:100%;
   height:100%;
   position:absolute;
-  padding:90px 70px 50px 70px;
-  background: #283965;
+  padding:30px 70px 50px 70px;
+  background: #6995c7;
 }
 
 .login-html .sign-in-htm,
@@ -209,7 +292,7 @@ div, h2, p, figure {
 }
 
 .login-html .tab{
-  font-size:22px;
+  font-size: 1.5em;
   margin-right:15px;
   padding-bottom:5px;
   margin:0 15px 10px 0;
@@ -220,7 +303,7 @@ div, h2, p, figure {
 .login-html .sign-in:checked + .tab,
 .login-html .sign-up:checked + .tab{
   color:#fff;
-  border-color:#1161ee;
+  border-color: #3e6da3;
 }
 
 .login-form{
@@ -241,41 +324,18 @@ div, h2, p, figure {
 
 .login-form span {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.8em;
   color: #fff;
   display: inline-block;
   position: relative;
   transition: all 0.5s ease-in-out;
+  padding-top: 10px;
   margin-left: 5px;
-}
-
-.custom-checkbox {
-  -webkit-appearance: none;
-  background-color: #fff;
-  border-radius: 2px;
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.custom-checkbox:checked {
-  background-color: rgba(17, 97, 237, 1);
-}
-
-.custom-checkbox:checked:after {
-  content: '\2714';
-  font-size: 10px;
-  position: absolute;
-  color: #fff;
-}
-
-.custom-checkbox:focus {
-  outline: none;
 }
 
 .login-form label{
   display: inline-block;
   padding-left: 5px;
-  padding-bottom: 10px;
   color:#fff;
 }
 

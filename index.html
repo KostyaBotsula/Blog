@@ -22,36 +22,37 @@
   <body data-spy="scroll" data-offset="0" data-target="#navigation">
 
     <!-- Fixed navbar -->
-	    <nav class="navbar navbar-default navbar-fixed-top">
+	    <nav class="navbar navbar-default navbar-fixed-top navbar-style">
   			<div class="container">
-    			<div class="navbar-header">
-      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-        				<span class="sr-only">Toggle navigation</span>
-        				<span class="icon-bar"></span>
-        				<span class="icon-bar"></span>
-        				<span class="icon-bar"></span>
-      				</button>
-      				<a class="navbar-brand" href="#">Blog</a>
-    			</div>
+          <div class ="custom-navbar">
+    			  <div class="navbar-header">
+      				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        				  <span class="sr-only">Toggle navigation</span>
+        				  <span class="icon-bar"></span>
+        				  <span class="icon-bar"></span>
+        				  <span class="icon-bar"></span>
+      				  </button>
+      				  <a class="navbar-brand logo" href="#">Blog</a>
+    			  </div>
  
-    			<div class="collapse navbar-collapse" id="navbar-collapse">
-      				<form class="navbar-form navbar-left" role="search">
-        				<div class="form-group">
-          					<input type="text" class="form-control" placeholder="Найти">
-        				</div>
-        				<button type="submit" class="btn btn-default">Поиск</button>
-      				</form>
-      				<ul class="nav navbar-nav navbar-right">
-        				<li><a href="javascript:PopUpShowLogin()">Вход</a></li>
-                <li><a href="javascript:PopUpShowRegister()">Регистрация</a></li>
-      				</ul>
-    			</div>
-  			</div>
-		</nav>
-	
-	<div class="main">
-    <div class="container">
-      <div class="row">
+    			  <div class="collapse navbar-collapse" id="navbar-collapse">
+      				  <form class="navbar-form navbar-left" role="search">
+        				  <div class="form-group">
+          					  <input type="text" class="form-control text" placeholder="Найти">
+        				  </div>
+        				  <button type="submit" class="btn btn-default custom-button">Поиск</button>
+      				  </form>
+      				  <ul class="nav navbar-nav navbar-right">
+        				  <li><a href="javascript:PopUpShowLogin()">Вход</a></li>
+                  <li><a href="javascript:PopUpShowRegister()">Регистрация</a></li>
+      				  </ul>
+    			  </div>
+  			  </div>
+        </div>
+		  </nav>
+
+	<div class="wrap">
+    <div class="container main">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <a class="article" href="#">
               <figure class="article-image is-4by3">
@@ -144,14 +145,13 @@
               </div>
           </a>
         </div>
-      </div>
     </div>
   </div>
 
-  <div class="b-popup" id="login">
+  <div class="popup" id="login">
     <div class="login-wrap">
       <div class="login-html">
-        <button type="button" class="close" onClick='location.href="javascript:PopUpHide()"'>×</button>
+        <button type="button" class="close custom-close" onClick='location.href="javascript:PopUpHide()"'>×</button>
         <input id="tab-1" type="radio" name="tab" class="sign-in"><label for="tab-1" class="tab">Sign In</label>
         <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
           <div class="login-form" id="login-form">
@@ -166,7 +166,7 @@
                 <input type="checkbox">
                 <label>Keep me Signed in</label>
 
-                <button type="button" class="btn btn-primary btn-lg btn-block" onClick='location.href="javascript:PopUpHide()"'>Sign In</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block custom-button" onClick='location.href="javascript:PopUpHide()"'>Sign In</button>
               </div>
               <div class="hr">
               </div>
@@ -188,7 +188,7 @@
                 <span>Email Address</span>
                 <input class="text" type="text">
   
-                <button type="button" class="btn btn-primary btn-lg btn-block" onClick='location.href="javascript:PopUpHide()"'>Sign Up</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block custom-button" onClick='location.href="javascript:PopUpHide()"'>Sign Up</button>
               </div>
             </div>
           </div>
