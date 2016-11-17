@@ -123,7 +123,7 @@ div, h2, p, figure {
 	margin-top: 10px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
   .form-group .custom-button {
     margin-top: 10px;
   }
