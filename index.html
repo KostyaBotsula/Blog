@@ -2,11 +2,14 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- @TODO Add favicon -->
 	<!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
 	<link href="assets/css/bootstrap.css" rel="stylesheet">
 	<link href="assets/css/styles.css" rel="stylesheet">
 	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
 	<script src="assets/js/smoothscroll.js"></script>
 </head>
 
@@ -15,8 +18,8 @@
 	<nav class="navbar navbar-default navbar-fixed-top navbar-style">
 		<div class="container">
 			<div class ="custom-navbar">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+				<div class="navbar-header ">
+					<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle custom-button">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -25,15 +28,15 @@
 					<a class="navbar-brand logo" href="#">Blog</a>
 				</div>
 
-				<div class="collapse navbar-collapse" id="navbar-collapse">
-					<form class="navbar-form navbar-left" role="search">
+				<div id="navbarCollapse" class="collapse navbar-collapse">
+					<form class="nav navbar-form navbar-left" role="search">
 						<div class="form-group">
 							<input type="search" class="form-control text" placeholder="Найти">
+						    <button type="submit" class="btn btn-default custom-button">Поиск</button>
 						</div>
-						<button type="submit" class="btn btn-default custom-button">Поиск</button>
 					</form>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#" class="loginBtn">Вход</a></li>
+						<li><a href="#" class="loginBtn"> Вход</a></li>
 						<li><a href="#" class="signUpBtn">Регистрация</a></li>
 					</ul>
 				</div>
@@ -44,9 +47,10 @@
     <!-- Main container -->
 	<div class="wrap">
 		<div class="container main">
+		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<a class="article" href="#">
-					<figure class="article-image is-4by3">
+					<figure class="article-image">
 						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-01-lo.jpg" alt="">
 					</figure>
 					<div class="article-body">
@@ -136,6 +140,7 @@
 					</div>
 				</a>
 			</div>
+		</div>
 		</div>
 	</div>
 
