@@ -126,6 +126,7 @@ div, h2, p, figure {
 @media (max-width: 767px) {
   .form-group .custom-button {
     margin-top: 10px;
+    width: 100%;
   }
 }
 
