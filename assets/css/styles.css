@@ -46,6 +46,7 @@ header, nav, article, aside, footer, hgroup, section {
 }
 
 html {
+	  color: #666;
 	font-size: 0.9em;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -55,7 +56,6 @@ html {
 	text-rendering: optimizeLegibility;
 }
 body {
-  color: #666;
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-size: 1em;
   font-weight: 400;
