@@ -100,6 +100,10 @@ div, h2, p, figure {
 	border-color: #35649a;
 }
 
+.navbar-default .custom-button .icon-bar {
+	background-color: #fff;
+}
+
 .custom-button:focus,
 .custom-button.focus,
 .custom-button:hover,
@@ -114,6 +118,21 @@ div, h2, p, figure {
 .custom-button.active:hover,
 .custom-button:active:focus,
 .custom-button.active:focus {
+	color: #fff;
+	background-color: #214369;
+	border-color: #1e3c5d;
+}
+
+.navbar-default .custom-button:hover,
+.navbar-default .custom-button:focus,
+.navbar-default .custom-button:active{
+	color: #fff;
+	background-color: #35649a;
+	border-color: #2c5c92;
+}
+
+.navbar-default .custom-button:active:hover,
+.navbar-default .custom-button:active:focus{
 	color: #fff;
 	background-color: #214369;
 	border-color: #1e3c5d;
