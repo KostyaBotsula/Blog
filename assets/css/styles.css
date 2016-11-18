@@ -55,22 +55,22 @@ html {
 	text-rendering: optimizeLegibility;
 }
 body {
-  color: #666;
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.4;
+	color: #666;
+	font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.4;
 }
 
 a {
-  text-decoration: none;
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  color: inherit;
+	text-decoration: none;
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+	color: inherit;
 }
 
 div, h2, p, figure {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .wrap {
@@ -84,8 +84,6 @@ div, h2, p, figure {
 	background-color: #6995c7;
 	border: 0;
 }
-
-
 
 .custom-close {
 	color: #edeef0;
@@ -105,19 +103,15 @@ div, h2, p, figure {
 }
 
 .custom-button:focus,
-.custom-button.focus,
 .custom-button:hover,
-.custom-button:active,
-.custom-button.active {
+.custom-button:active {
 	color: #fff;
 	background-color: #35649a;
 	border-color: #2c5c92;
 }
 
 .custom-button:active:hover,
-.custom-button.active:hover,
-.custom-button:active:focus,
-.custom-button.active:focus {
+.custom-button:active:focus {
 	color: #fff;
 	background-color: #214369;
 	border-color: #1e3c5d;
@@ -125,38 +119,38 @@ div, h2, p, figure {
 
 .navbar-default .custom-button:hover,
 .navbar-default .custom-button:focus,
-.navbar-default .custom-button:active{
+.navbar-default .custom-button:active {
 	color: #fff;
 	background-color: #35649a;
 	border-color: #2c5c92;
 }
 
 .navbar-default .custom-button:active:hover,
-.navbar-default .custom-button:active:focus{
+.navbar-default .custom-button:active:focus {
 	color: #fff;
 	background-color: #214369;
 	border-color: #1e3c5d;
 }
 
-.login-form .custom-button{
+.login-form .custom-button {
 	margin-top: 10px;
 }
 
 @media (max-width: 767px) {
-  .form-group .custom-button {
-    margin-top: 10px;
-    width: 100%;
-  }
+	.form-group .custom-button {
+		margin-top: 10px;
+		width: 100%;
+	}
 }
 
-.custom-navbar .navbar-brand{
+.custom-navbar .navbar-brand {
 	font-family: 'Museo';
 	font-size: 2em;
 	color: #fff;
 	text-shadow: 1px 1px 1px black;
 }
 
-.custom-navbar .navbar-nav > li > a{
+.custom-navbar .navbar-nav > li > a {
 	color: #fff;
 }
 
@@ -171,66 +165,66 @@ div, h2, p, figure {
 }
 
 .article {
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  color: #333;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  flex-basis: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	color: #333;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	flex-basis: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .article:hover,
 .article:focus {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  color: #444;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	color: #444;
 }
 
 .article-image {
-  display: block;
-  padding-top: 75%;
-  position: relative;
-  width: 100%;
+	display: block;
+	padding-top: 75%;
+	position: relative;
+	width: 100%;
 }
 
 .article-image img {
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .article-body {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding: 20px;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 20px;
 }
 
 .article-title {
-  color: #333;
-  flex-shrink: 0;
-  font-size: 1.4em;
-  font-weight: 700;
-  line-height: 1.2;
+	color: #333;
+	flex-shrink: 0;
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 1.2;
 }
 
 .article-content {
-  margin-top: 5px;
+	margin-top: 5px;
 }
 
 .article-info {
-  display: flex;
-  font-size: 0.85em;
-  justify-content: space-between;
-  margin-top: 10px;
+	display: flex;
+	font-size: 0.85em;
+	justify-content: space-between;
+	margin-top: 10px;
 }
 
-.popup{
+.popup {
 	width:100%;
 	height:100%;
 	background-color: rgba(0,0,0,0.5);
