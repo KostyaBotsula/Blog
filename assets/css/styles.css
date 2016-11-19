@@ -1,401 +1,409 @@
 ﻿@charset "UTF-8";
-/* RESET */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, header, nav, article, aside, footer, hgroup, section {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	text-decoration: none;
-}
-:focus, :active { 
-	outline: 0 
-}
-
-ol, ul { 
-	list-style: none
-}
-
-blockquote:before,
-blockquote:after {
-	content: ""
-}
-blockquote {
-	quotes: "" ""
-}
-
-header, nav, article, aside, footer, hgroup, section {
-	display: block
-}
 
 /* TYPOGRAPHY */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
 
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/Montserrat-Regular.ttf');
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, header, nav, article, aside, footer, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+:focus, :active {
+    outline: 0
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote:before,
+blockquote:after {
+    content: ""
+}
+
+blockquote {
+    quotes: "" ""
+}
+
+header, nav, article, aside, footer, section {
+    display: block
 }
 
 @font-face {
-	font-family: 'Museo';
-	src: url('../fonts/exljbris - Museo Cyrl 900.otf');
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/exljbris - Museo Cyrl 900.otf');
 }
 
 html {
-	font-size: 0.9em;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	min-width: 300px;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	text-rendering: optimizeLegibility;
+    color: #666;
+    font-size: 0.9em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
 }
+
 body {
-	color: #666;
-	font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-	font-size: 1em;
-	font-weight: 400;
-	line-height: 1.4;
+    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.4;
 }
 
 a {
-	text-decoration: none;
-	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-	color: inherit;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    color: inherit;
 }
 
 div, h2, p, figure {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .wrap {
-	height: 100%;
-	width: 100%;
-	background-color: #edeef0;
+    height: 100%;
+    width: 100%;
+    background-color: #edeef0;
 }
 
 .navbar-style {
-	color: #fff;
-	background-color: #6995c7;
-	border: 0;
+    color: #fff;
+    background-color: #6995c7;
+    border: 0;
 }
 
 .custom-close {
-	color: #edeef0;
-	text-shadow: 0 1px 0 #fff;
-	font-size: 2.5em;
-	opacity: 1;
+    color: #edeef0;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 2.5em;
+    opacity: 1;
 }
 
 .custom-button {
-	color: #fff;
-	background-color: #3e6da3;
-	border-color: #35649a;
+    color: #fff;
+    background-color: #3e6da3;
+    border-color: #35649a;
 }
 
 .navbar-default .custom-button .icon-bar {
-	background-color: #fff;
+    background-color: #fff;
 }
 
 .custom-button:focus,
 .custom-button:hover,
 .custom-button:active {
-	color: #fff;
-	background-color: #35649a;
-	border-color: #2c5c92;
+    color: #fff;
+    background-color: #35649a;
+    border-color: #2c5c92;
 }
 
 .custom-button:active:hover,
 .custom-button:active:focus {
-	color: #fff;
-	background-color: #214369;
-	border-color: #1e3c5d;
+    color: #fff;
+    background-color: #214369;
+    border-color: #1e3c5d;
 }
 
 .navbar-default .custom-button:hover,
 .navbar-default .custom-button:focus,
 .navbar-default .custom-button:active {
-	color: #fff;
-	background-color: #35649a;
-	border-color: #2c5c92;
+    color: #fff;
+    background-color: #35649a;
+    border-color: #2c5c92;
 }
 
 .navbar-default .custom-button:active:hover,
 .navbar-default .custom-button:active:focus {
-	color: #fff;
-	background-color: #214369;
-	border-color: #1e3c5d;
+    color: #fff;
+    background-color: #214369;
+    border-color: #1e3c5d;
 }
 
 .login-form .custom-button {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 @media (max-width: 767px) {
-	.form-group .custom-button {
-		margin-top: 10px;
-		width: 100%;
-	}
+    .form-group .custom-button {
+        margin-top: 10px;
+        width: 100%;
+    }
 }
 
 .custom-navbar .navbar-brand {
-	font-family: 'Museo';
-	font-size: 2em;
-	color: #fff;
-	text-shadow: 1px 1px 1px black;
+    font-family: 'Museo', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
 }
 
 .custom-navbar .navbar-nav > li > a {
-	color: #fff;
+    color: #fff;
 }
 
 .main {
-	padding-top: 50px;
+    padding-top: 50px;
 }
 
 .main a {
-	text-decoration: none;
-	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-	color: inherit;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    color: inherit;
 }
 
 .article {
-	background-color: #fff;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	color: #333;
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	flex-basis: auto;
-	margin-top: 15px;
-	margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #333;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-basis: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .article:hover,
 .article:focus {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	color: #444;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    color: #444;
 }
 
 .article-image {
-	display: block;
-	padding-top: 75%;
-	position: relative;
-	width: 100%;
+    display: block;
+    padding-top: 75%;
+    position: relative;
+    width: 100%;
 }
 
 .article-image img {
-	display: block;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .article-body {
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	padding: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .article-title {
-	color: #333;
-	flex-shrink: 0;
-	font-size: 1.4em;
-	font-weight: 700;
-	line-height: 1.2;
+    color: #333;
+    flex-shrink: 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .article-content {
-	margin-top: 5px;
+    margin-top: 5px;
 }
 
 .article-info {
-	display: flex;
-	font-size: 0.85em;
-	justify-content: space-between;
-	margin-top: 10px;
+    display: flex;
+    font-size: 0.85em;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .popup {
-	width:100%;
-	height:100%;
-	background-color: rgba(0,0,0,0.5);
-	overflow:hidden;
-	position:fixed;
-	top:0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
 }
 
 .text {
-	border: none;
-	color: #fff;
-	width: 100%;
-	padding: 10px 20px;
-	display: block;
-	height: 28px;
-	border-radius: 20px;
-	background: #3e6da3;
-	border: 2px solid rgba(0, 0, 0, 0);
-	overflow: hidden;
-	transition: all 0.5s ease-in-out;
+    color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    display: block;
+    height: 28px;
+    border-radius: 20px;
+    background: #3e6da3;
+    border: 2px solid rgba(0, 0, 0, 0);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
 }
 
 .text:focus {
-	color: #000;
+    color: #000;
 }
 
 .text::-webkit-input-placeholder { /* Chrome */
-	color: #fff;
+    color: #fff;
 }
-.text::-ms-input-placeholder { /* IE 10+ */
-	color: #fff;
+
+.text:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
 }
+
 .text::-moz-placeholder { /* Firefox 19+ */
-	color: #fff;
-	opacity: 1;
+    color: #fff;
+    opacity: 1;
 }
-.text::-moz-placeholder { /* Firefox 4 - 18 */
-	color: #fff;
-	opacity: 1;
+
+.text:-moz-placeholder { /* Firefox 4 - 18 */
+    color: #fff;
+    opacity: 1;
 }
 
 .text:focus::-webkit-input-placeholder { /* Chrome */
-	color: #000;
+    color: #000;
 }
-.text:focus::-ms-input-placeholder { /* IE 10+ */
-	color: #000;
+
+.text:focus:-ms-input-placeholder { /* IE 10+ */
+    color: #000;
 }
+
 .text:focus::-moz-placeholder { /* Firefox 19+ */
-	color: #000;
-	opacity: 1;
+    color: #000;
+    opacity: 1;
 }
-.text:focus::-moz-placeholder { /* Firefox 4 - 18 */
-	color: #000;
-	opacity: 1;
+
+.text:focus:-moz-placeholder { /* Firefox 4 - 18 */
+    color: #000;
+    opacity: 1;
 }
 
 .text:focus {
-	outline: 0;
-	border: 2px solid rgba(36, 74, 117, 1);
-	border-radius: 20px;
-	background: #fff;
+    outline: 0;
+    border: 2px solid rgba(36, 74, 117, 1);
+    border-radius: 20px;
+    background: #fff;
 }
 
 /* Login Dialog */
 #login {
-	display: none;
+    display: none;
 }
 
 .login-wrap {
-	width:100%;
-	margin: auto;
-	top:25%;
-	max-width:525px;
-	min-height:500px;
-	position:relative;
-	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    width: 100%;
+    margin: auto;
+    top: 25%;
+    max-width: 525px;
+    min-height: 500px;
+    position: relative;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
 }
 
 .login-html {
-	font-family: 'Montserrat', sans-serif;
-	width:100%;
-	height:100%;
-	position:absolute;
-	padding:30px 70px 50px 70px;
-	background: #6995c7;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 30px 70px 50px 70px;
+    background: #6995c7;
 }
 
 .login-html .sign-in-htm,
 .login-html .sign-up-htm {
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	position:absolute;
-	transform:rotateY(180deg);
-	backface-visibility:hidden;
-	transition:all .4s linear;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
 }
 
 .login-html .sign-in,
 .login-html .sign-up,
 .login-form .group .check {
-	display:none;
+    display: none;
 }
 
 .login-html .tab {
-	text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 .login-html .tab {
-	font-size: 1.5em;
-	margin-right:15px;
-	padding-bottom:5px;
-	margin:0 15px 10px 0;
-	display:inline-block;
-	border-bottom:2px solid transparent;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
 }
 
 .login-html .sign-in:checked + .tab,
 .login-html .sign-up:checked + .tab {
-	color:#fff;
-	border-color: #3e6da3;
+    color: #fff;
+    border-color: #3e6da3;
 }
 
 .login-form {
-	min-height:345px;
-	position:relative;
-	perspective:1000px;
-	transform-style:preserve-3d;
+    min-height: 345px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 }
 
 .login-form .group {
-	margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
-.login-form .group input[data-type="password"] {
-	text-security:circle;
-	-webkit-text-security:circle;
-}
+/*.login-form .group input[data-type="password"] {*/
+/*!*text-security: circle;*!*/
+/*!*-webkit-text-security: circle;*!*/
+/*}*/
 
 .login-form span {
-	text-transform: uppercase;
-	font-size: 0.8em;
-	color: #fff;
-	display: inline-block;
-	position: relative;
-	transition: all 0.5s ease-in-out;
-	padding-top: 10px;
-	margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    padding-top: 10px;
+    margin-left: 5px;
 }
 
 .login-form label {
-	display: inline-block;
-	padding-left: 5px;
-	color:#fff;
+    display: inline-block;
+    padding-left: 5px;
+    color: #fff;
 }
 
 .login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm {
-	transform:rotate(0);
+    transform: rotate(0deg);
 }
 
 .login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
-	transform:rotate(0);
+    transform: rotate(0deg);
 }
 
 .hr {
-	height:2px;
-	margin:60px 0 50px 0;
-	background:rgba(255,255,255,.2);
+    height: 2px;
+    margin: 60px 0 50px 0;
+    background: rgba(255, 255, 255, .2);
 }
 
 .foot-lnk {
-	text-align:center;
+    text-align: center;
 }
