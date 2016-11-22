@@ -7,7 +7,7 @@ $('.loginBtn').click(function(event) {
 		$('.loginBtn').removeAttr('data-target');
 		$('.loginBtn').removeAttr('data-toggle');
 	}
-	$("#login").show();
+	$("#login-dialog").show();
 	$('#tab-1').prop('checked',true);
 });
 
@@ -19,10 +19,10 @@ $('.signUpBtn').click(function(event) {
 		$('.signUpBtn').removeAttr('data-target');
 		$('.signUpBtn').removeAttr('data-toggle');
 	}
-	$("#login").show();
+	$("#login-dialog").show();
 	$('#tab-2').prop('checked',true);
 });
 
 $('.custom-close').click(function(event) {
-	$("#login").hide();
+	$("#login-dialog").hide();
 });
