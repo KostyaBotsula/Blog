@@ -172,10 +172,6 @@ div, h2, p, figure {
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     color: #333;
-    /*display: flex;*/
-    /*flex: 1;*/
-    /*flex-direction: column;*/
-    /*flex-basis: auto;*/
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -183,6 +179,7 @@ div, h2, p, figure {
 .article:hover,
 .article:focus {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition:all 0.5s 0s;
     color: #444;
 }
 
@@ -203,15 +200,12 @@ div, h2, p, figure {
 }
 
 .article-body {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
     padding: 20px;
+    padding-bottom: 40px;
 }
 
 .article-title {
     color: #333;
-    flex-shrink: 0;
     font-size: 1.4em;
     font-weight: 700;
     line-height: 1.2;
@@ -222,10 +216,17 @@ div, h2, p, figure {
 }
 
 .article-info {
-    /*display: flex;*/
     font-size: 0.85em;
     justify-content: space-between;
     margin-top: 10px;
+}
+
+.article-info .author {
+    float: left;
+}
+
+.article-info .comments {
+    float: right;
 }
 
 .popup {
