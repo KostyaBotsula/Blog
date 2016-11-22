@@ -179,7 +179,7 @@ div, h2, p, figure {
 .article:hover,
 .article:focus {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    transition:all 0.5s 0s;
+    transition: all 0.5s 0s;
     color: #444;
 }
 
@@ -200,8 +200,7 @@ div, h2, p, figure {
 }
 
 .article-body {
-    padding: 20px;
-    padding-bottom: 40px;
+    padding: 20px 20px 40px;
 }
 
 .article-title {
