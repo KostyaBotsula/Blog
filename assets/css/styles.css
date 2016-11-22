@@ -49,7 +49,6 @@ header, nav, article, aside, footer, section {
 }
 
 html {
-    color: #666;
     font-size: 0.9em;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -60,6 +59,8 @@ html {
 }
 
 body {
+    background-color: #edeef0;
+    color: #666;
     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
     font-size: 1em;
     font-weight: 400;
@@ -72,15 +73,9 @@ a {
     color: inherit;
 }
 
-div, h2, p, figure {
-    margin: 0;
-    padding: 0;
-}
-
 .wrap {
     height: 100%;
     width: 100%;
-    background-color: #edeef0;
 }
 
 .navbar-style {
@@ -156,6 +151,68 @@ div, h2, p, figure {
 
 .custom-navbar .navbar-nav > li > a {
     color: #fff;
+}
+
+.page {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.title {
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.personal {
+    padding-bottom: 20px;
+}
+
+.btn-group .custom-button::after {
+    content: '';
+    position: absolute;
+    left: -35px;
+    bottom: 0;
+    border: 15px solid transparent;
+    border-right: 20px solid rgba(37, 91, 136, 1);
+}
+
+.text-info {
+    color: #333;
+    width: 100%;
+    height: 28px;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    background: #edeef0;
+    border: 2px solid rgba(0, 0, 0, 0);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.text-info:focus {
+    outline: 0;
+    border: 2px solid rgba(217, 221, 228, 1);
+    background: #fff;
+}
+
+.btn-group {
+    padding: 10px;
+}
+
+.personal label {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #333;
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    padding-top: 10px;
+    margin-left: 5px;
 }
 
 .main {
@@ -237,7 +294,7 @@ div, h2, p, figure {
     top: 0;
 }
 
-.text {
+.text-login {
     color: #fff;
     width: 100%;
     padding: 10px 20px;
@@ -250,47 +307,44 @@ div, h2, p, figure {
     transition: all 0.5s ease-in-out;
 }
 
-.text:focus {
-    color: #000;
-}
-
-.text::-webkit-input-placeholder { /* Chrome */
+.text-login::-webkit-input-placeholder { /* Chrome */
     color: #fff;
 }
 
-.text:-ms-input-placeholder { /* IE 10+ */
+.text-login:-ms-input-placeholder { /* IE 10+ */
     color: #fff;
 }
 
-.text::-moz-placeholder { /* Firefox 19+ */
+.text-login::-moz-placeholder { /* Firefox 19+ */
     color: #fff;
     opacity: 1;
 }
 
-.text:-moz-placeholder { /* Firefox 4 - 18 */
+.text-login:-moz-placeholder { /* Firefox 4 - 18 */
     color: #fff;
     opacity: 1;
 }
 
-.text:focus::-webkit-input-placeholder { /* Chrome */
+.text-login:focus::-webkit-input-placeholder { /* Chrome */
     color: #000;
 }
 
-.text:focus:-ms-input-placeholder { /* IE 10+ */
+.text-login:focus:-ms-input-placeholder { /* IE 10+ */
     color: #000;
 }
 
-.text:focus::-moz-placeholder { /* Firefox 19+ */
-    color: #000;
-    opacity: 1;
-}
-
-.text:focus:-moz-placeholder { /* Firefox 4 - 18 */
+.text-login:focus::-moz-placeholder { /* Firefox 19+ */
     color: #000;
     opacity: 1;
 }
 
-.text:focus {
+.text-login:focus:-moz-placeholder { /* Firefox 4 - 18 */
+    color: #000;
+    opacity: 1;
+}
+
+.text-login:focus {
+    color: #000;
     outline: 0;
     border: 2px solid rgba(36, 74, 117, 1);
     border-radius: 20px;
@@ -298,7 +352,7 @@ div, h2, p, figure {
 }
 
 /* Login Dialog */
-#login {
+#login-dialog {
     display: none;
 }
 
@@ -333,7 +387,7 @@ div, h2, p, figure {
     transition: all .4s linear;
 }
 
-.login-html .sign-in,
+.login-html .login,
 .login-html .sign-up,
 .login-form .group .check {
     display: none;
@@ -351,7 +405,7 @@ div, h2, p, figure {
     border-bottom: 2px solid transparent;
 }
 
-.login-html .sign-in:checked + .tab,
+.login-html .login:checked + .tab,
 .login-html .sign-up:checked + .tab {
     color: #fff;
     border-color: #3e6da3;
@@ -368,12 +422,7 @@ div, h2, p, figure {
     margin-bottom: 15px;
 }
 
-/*.login-form .group input[data-type="password"] {*/
-/*!*text-security: circle;*!*/
-/*!*-webkit-text-security: circle;*!*/
-/*}*/
-
-.login-form span {
+.login-form label {
     text-transform: uppercase;
     font-size: 0.8em;
     color: #fff;
@@ -384,13 +433,7 @@ div, h2, p, figure {
     margin-left: 5px;
 }
 
-.login-form label {
-    display: inline-block;
-    padding-left: 5px;
-    color: #fff;
-}
-
-.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm {
+.login-html .login:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm {
     transform: rotate(0deg);
 }
 
