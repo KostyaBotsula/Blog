@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- @TODO Add favicon -->
+	<!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/styles.css" rel="stylesheet">
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navigation">
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top navbar-style">
+		<div class="container">
+			<div class ="custom-navbar">
+				<div class="navbar-header ">
+					<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle custom-button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand logo" href="#">Blog</a>
+				</div>
+
+				<div id="navbarCollapse" class="collapse navbar-collapse">
+					<form class="nav navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="search" class="form-control text" placeholder="Найти">
+						    <button type="submit" class="btn btn-default custom-button">Поиск</button>
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" class="loginBtn">Вход</a></li>
+						<li><a href="#" class="signUpBtn">Регистрация</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+    <!-- Main container -->
+	<div class="wrap">
+		<div class="container main">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 page">
+					<h1 class="title"> 
+						Мой профиль 
+					</h1>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 personal">
+					<label>Имя</label>
+					<input class="textinfo" type="text">
+					<label>Фамилия</label>
+					<input class="textinfo" type="text">
+					<label>Логин</label>
+					<input class="textinfo" type="text">
+					<label>Пароль</label>
+					<input class="textinfo" type="password" data-type="password">
+					<label>Повторите пароль</label>
+					<input class="textinfo" type="password" data-type="password">
+					<label>Аватар</label>
+					<input class="textinfo" type="text">
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="btn-group-vertical btngroup" data-toggle="buttons">
+  							<label class="btn btn-primary active custom-button">
+    							<input type="radio" name="options" id="option1" autocomplete="off" checked> Мой профиль
+  							</label>
+  							<label class="btn btn-primary custom-button">
+    							<input type="radio" name="options" id="option2" autocomplete="off"> Мои статьи
+  							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Login dialog -->
+	<div class="popup" id="login">
+		<div class="login-wrap">
+			<div class="login-html">
+				<button type="button" class="close custom-close">×</button>
+				<input id="tab-1" type="radio" name="tab" class="sign-in"><label for="tab-1" class="tab">Вход</label>
+				<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Регистрация</label>
+				<div class="login-form" id="login-form">
+					<div class="sign-in-htm">
+						<div class="group">
+							<label>Имя пользователя</label>
+							<input class="text" type="text">
+
+							<label>Пароль</label>
+							<input class="text" type="password" data-type="password">
+
+							<input type="checkbox">
+							<label>Запомнить меня</label>
+
+							<button type="button" class="btn btn-primary btn-lg btn-block custom-button">Войти</button>
+						</div>
+						<div class="hr">
+						</div>
+						<div class="foot-lnk">
+							<a href="#forgot">Забыли пароль?</a>
+						</div>
+					</div>
+
+					<div class="sign-up-htm">
+						<div class="group">
+							<label>Имя пользователя</label>
+							<input class="text" type="text">
+
+							<label>Пароль</label>
+							<input class="text" type="password" data-type="password">
+
+							<label>Повторите пароль</label>
+							<input class="text" type="password" data-type="password">
+
+							<label>E-mail</label>
+							<input class="text" type="email">
+
+							<button type="button" class="btn btn-primary btn-lg btn-block custom-button">Зарегистрироваться</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
