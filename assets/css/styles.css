@@ -257,7 +257,7 @@ a {
 }
 
 .article-body {
-    padding: 20px 20px 40px;
+    padding: 20px;
 }
 
 .article-title {
@@ -273,15 +273,26 @@ a {
 
 .article-info {
     font-size: 0.85em;
-    justify-content: space-between;
     margin-top: 10px;
 }
 
-.article-info .author {
-    float: left;
+
+.author img,
+.author-content {
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.article-info .comments {
+.author-content a {
+    font-weight: bold;
+}
+
+.author img{
+    border-radius: 50%;
+    margin-right: 0.6em;
+}
+
+.author .comments {
     float: right;
 }
 

@@ -31,7 +31,7 @@
 				<div id="navbarCollapse" class="collapse navbar-collapse">
 					<form class="nav navbar-form navbar-left" role="search">
 						<div class="form-group">
-							<input type="search" class="form-control text" placeholder="Найти">
+							<input type="search" class="form-control text-login" placeholder="Найти">
 						    <button type="submit" class="btn btn-default custom-button">Поиск</button>
 						</div>
 					</form>
@@ -48,36 +48,30 @@
 	<div class="wrap">
 		<div class="container main">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 page">
-					<h1 class="title"> 
-						Мой профиль 
-					</h1>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 personal">
-					<label>Имя</label>
-					<input class="text-info" type="text">
-					<label>Фамилия</label>
-					<input class="text-info" type="text">
-					<label>Логин</label>
-					<input class="text-info" type="text">
-					<label>Пароль</label>
-					<input class="text-info" type="password" data-type="password">
-					<label>Повторите пароль</label>
-					<input class="text-info" type="password" data-type="password">
-					<label>Аватар</label>
-					<input class="text-info" type="text">
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<div class="btn-group-vertical btn-group" data-toggle="buttons">
-  							<label class="btn btn-primary active custom-button">
-    							<input type="radio" name="options" id="option1" autocomplete="off" checked> Мой профиль
-  							</label>
-  							<label class="btn btn-primary custom-button">
-    							<input type="radio" name="options" id="option2" autocomplete="off"> Мои статьи
-  							</label>
-						</div>
-					</div>
-				</div>
-			</div>
+				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <a href="#">
+                    <div class="article">
+                        <figure class="article-image">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-01-lo.jpg" alt="">
+                        </figure>
+                        <div class="article-body">
+                            <h2 class="article-title">
+                                Hello World 1
+                            </h2>
+                            <p class="article-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
+                                pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
+                                feugiat facilisis.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros.
+                            </p>
+                            <footer class="article-info">
+                                <span class="author">By Joe Smith</span>
+                                <span class="comments">42 comments</span>
+                            </footer>
+                        </div>
+                    </div>
+                </a>
+            </div>
 		</div>
 	</div>
 
@@ -92,10 +86,10 @@
 					<div class="sign-in-htm">
 						<div class="group">
 							<label>Имя пользователя</label>
-							<input class="text" type="text">
+							<input class="text-login" type="text">
 
 							<label>Пароль</label>
-							<input class="text" type="password" data-type="password">
+							<input class="text-login" type="password" data-type="password">
 
 							<input type="checkbox">
 							<label>Запомнить меня</label>
@@ -112,16 +106,16 @@
 					<div class="sign-up-htm">
 						<div class="group">
 							<label>Имя пользователя</label>
-							<input class="text" type="text">
+							<input class="text-login" type="text">
 
 							<label>Пароль</label>
-							<input class="text" type="password" data-type="password">
+							<input class="text-login" type="password" data-type="password">
 
 							<label>Повторите пароль</label>
-							<input class="text" type="password" data-type="password">
+							<input class="text-login" type="password" data-type="password">
 
 							<label>E-mail</label>
-							<input class="text" type="email">
+							<input class="text-login" type="email">
 
 							<button type="button" class="btn btn-primary btn-lg btn-block custom-button">Зарегистрироваться</button>
 						</div>
