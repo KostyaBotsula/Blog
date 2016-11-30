@@ -159,10 +159,8 @@ a {
     color: #333;
     margin-top: 15px;
     margin-bottom: 15px;
-}
-
-.profile-body {
     padding: 20px;
+    overflow: hidden;
 }
 
 .login {
@@ -172,14 +170,56 @@ a {
     line-height: 1.2;
 }
 
-.profile img,
-.profile-info {
-    display: inline-block;
-    vertical-align: middle;
+.profile img{
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-.profile img{
-    margin-right: 0.6em;
+.dropdown-toggle {
+    vertical-align: middle;
+    border-radius: 0;
+}
+
+.navbar-right img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.custom-changes-btn {
+    color: #55677d;
+    background-color: #e5ebf1;
+    border-color: #dae3eb;
+}
+
+.custom-changes-btn:focus,
+.custom-changes-btn:hover,
+.custom-changes-btn:active {
+    color: #55677d;
+    background-color: #dae3eb;
+    border-color: #cfd9e4;
+}
+
+.custom-changes-btn:active:hover,
+.custom-changes-btn:active:focus {
+    color: #55677d;
+    background-color: #c1cedb;
+    border-color: #b6c4d2;
+}
+
+.custom-btn-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.changes-text {
+    width: 100%;
+}
+
+.changes-label {
+    float:right;
 }
 
 .main {

@@ -25,7 +25,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand logo" href="#">Blog</a>
+					<a class="navbar-brand logo" href="/Users/Папа/Pictures/Blog/index.html">Blog</a>
 				</div>
 
 				<div id="navbarCollapse" class="collapse navbar-collapse">
@@ -35,10 +35,19 @@
 						    <button type="submit" class="btn btn-default custom-button">Поиск</button>
 						</div>
 					</form>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#" class="loginBtn">Вход</a></li>
-						<li><a href="#" class="signUpBtn">Регистрация</a></li>
-					</ul>
+
+					<div class="btn-group navbar-right">
+  						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Профиль
+  							<img src="http://m.apicat.ru/styles/img/ic_avatar.jpg" alt="">
+    						<span class="caret"></span>
+    					</a>
+  						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+  							<li><a tabindex="-1" href="#">Все статьи</a></li>
+  							<li><a tabindex="-1" href="#">Черновики</a></li>
+  							<li class="divider"></li>
+  							<li><a tabindex="-1" href="/Users/Папа/Pictures/Blog/personal_changes.html">Изменить</a></li>
+  						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -48,23 +57,27 @@
 	<div class="wrap">
 		<div class="container main">
 			<div class="row">
-				<aside class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<aside class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                     <div class="profile">
-                        <div class="profile-body">
                         	<img src="http://m.apicat.ru/styles/img/ic_avatar.jpg" alt="">
-                        	<div class="profile-info">
+                        	<div>
                             	<h2 class="login">
                                 	Joe Smith
                             	</h2>
                             	<span>Имя: Joe </br></span>
                             	<span>Фамилия: Smith</span>
                             </div>
-                            <button type="button" class="btn btn-primary btn-sm btn-block custom-button">Изменить</button>
-                        </div>
+                            <div class="btn-group-vertical custom-btn-group">
+                            	<button type="button" class="btn btn-primary btn-sm btn-block custom-button">Все статьи</button>
+                            	<button type="button" class="btn btn-primary btn-sm btn-block custom-button">Черновики</button>
+                            </div>
+                            <form action="/Users/Папа/Pictures/Blog/personal_changes.html">
+                            	<button type="submit" class="btn btn-primary btn-sm btn-block custom-changes-btn">Изменить</button>
+                            </form>
                     </div>
             	</aside>
 
-				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <a href="#">
                     <div class="article">
                         <figure class="article-image">
@@ -126,53 +139,55 @@
 
     <!-- Login dialog -->
 	<div class="popup" id="login-dialog">
-		<div class="login-wrap">
-			<div class="login-html">
-				<button type="button" class="close custom-close">×</button>
-				<input id="tab-1" type="radio" name="tab" class="login"><label for="tab-1" class="tab">Вход</label>
-				<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Регистрация</label>
-				<div class="login-form" id="login-form">
-					<div class="sign-in-htm">
-						<div class="group">
-							<label>Имя пользователя</label>
-							<input class="text-login" type="text">
+    <div class="login-wrap">
+        <div class="login-html">
+            <button type="button" class="close custom-close">×</button>
+            <input id="tab-1" type="radio" name="tab" class="login"><label for="tab-1" class="tab">Вход</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Регистрация</label>
+            <div class="login-form" id="login-form">
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="loginLoginForm">Имя пользователя</label>
+                        <input id="loginLoginForm" class="text-login" type="text">
 
-							<label>Пароль</label>
-							<input class="text-login" type="password" data-type="password">
+                        <label for="passwordLoginForm">Пароль</label>
+                        <input id="passwordLoginForm" class="text-login" type="password" data-type="password">
 
-							<input type="checkbox">
-							<label>Запомнить меня</label>
+                        <input id="rememberLoginForm" type="checkbox">
+                        <label for="rememberLoginForm">Запомнить меня</label>
 
-							<button type="button" class="btn btn-primary btn-lg btn-block custom-button">Войти</button>
-						</div>
-						<div class="hr">
-						</div>
-						<div class="foot-lnk">
-							<a href="#forgot">Забыли пароль?</a>
-						</div>
-					</div>
+                        <button type="button" class="btn btn-primary btn-lg btn-block custom-button">Войти</button>
+                    </div>
+                    <div class="hr">
+                    </div>
+                    <div class="foot-lnk">
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </div>
 
-					<div class="sign-up-htm">
-						<div class="group">
-							<label>Имя пользователя</label>
-							<input class="text-login" type="text">
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <label for="loginSignUpForm">Имя пользователя</label>
+                        <input id="loginSignUpForm" class="text-login" type="text">
 
-							<label>Пароль</label>
-							<input class="text-login" type="password" data-type="password">
+                        <label for="passwordSignUpForm">Пароль</label>
+                        <input id="passwordSignUpForm" class="text-login" type="password" data-type="password">
 
-							<label>Повторите пароль</label>
-							<input class="text-login" type="password" data-type="password">
+                        <label for="passwordRepeatSignUpForm">Повторите пароль</label>
+                        <input id="passwordRepeatSignUpForm" class="text-login" type="password" data-type="password">
 
-							<label>E-mail</label>
-							<input class="text-login" type="email">
+                        <label for="emailSignUpForm">E-mail</label>
+                        <input id="emailSignUpForm" class="text-login" type="email">
 
-							<button type="button" class="btn btn-primary btn-lg btn-block custom-button">Зарегистрироваться</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                        <button type="button" class="btn btn-primary btn-lg btn-block custom-button">
+                            Зарегистрироваться
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 	<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
