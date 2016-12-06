@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 
 /* TYPOGRAPHY */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
@@ -175,17 +175,29 @@ a {
     margin-bottom: 10px;
 }
 
-.dropdown-toggle {
-    vertical-align: middle;
-    border-radius: 0;
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #fff;
+    background-color: #3e6da3;
+}
+
+.profile-name {
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.profile-image,
+.caret {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .navbar-right img {
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-    margin-left: 5px;
+    height: 28px;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 
 .custom-changes-btn {
@@ -297,9 +309,11 @@ a {
 .author img{
     border-radius: 50%;
     margin-right: 0.6em;
+    height: 40px;
 }
 
 .author .comments {
+    line-height: 40px;
     float: right;
 }
 
