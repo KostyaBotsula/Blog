@@ -153,6 +153,20 @@ a {
     color: #fff;
 }
 
+.profile h3 {
+    color: #333;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.profile .control-label {
+    font-weight: 700;
+}
+
+.settings-btn {
+    float: right;
+}
+
 .profile {
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -163,15 +177,9 @@ a {
     overflow: hidden;
 }
 
-.login {
-    color: #333;
-    font-size: 1.4em;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
 .profile img{
     width: 100%;
+    border-radius: 3%;
     margin-bottom: 10px;
 }
 
@@ -182,15 +190,31 @@ a {
 }
 
 .profile-name {
-    padding-right: 10px;
     display: inline-block;
     vertical-align: top;
 }
 
-.profile-image,
-.caret {
-    display: inline-block;
-    vertical-align: top;
+.right-profile {
+    float: right;
+}
+
+.profile-img{
+    margin-top: -5px;
+    margin-right: 5px;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown-menu {
+    min-width: 140px;
+}
+
+@media (max-width: 767px) {
+    .right-profile {
+        width: 100%;
+        float: left;
+    }
 }
 
 .navbar-right img {
