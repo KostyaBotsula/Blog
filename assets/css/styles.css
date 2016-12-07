@@ -177,7 +177,7 @@ a {
     overflow: hidden;
 }
 
-.profile img{
+.profile img {
     width: 100%;
     border-radius: 3%;
     margin-bottom: 10px;
@@ -198,7 +198,7 @@ a {
     float: right;
 }
 
-.profile-img{
+.profile-img {
     margin-top: -5px;
     margin-right: 5px;
     float: left;
@@ -255,7 +255,7 @@ a {
 }
 
 .changes-label {
-    float:right;
+    float: right;
 }
 
 .main {
@@ -319,18 +319,14 @@ a {
     margin-top: 10px;
 }
 
-
 .author img,
 .author-content {
     display: inline-block;
     vertical-align: middle;
-}
-
-.author-content a {
     font-weight: bold;
 }
 
-.author img{
+.author img {
     border-radius: 50%;
     margin-right: 0.6em;
     height: 40px;
@@ -503,6 +499,6 @@ a {
     background: rgba(255, 255, 255, .2);
 }
 
-.foot-lnk {
+.foot-link {
     text-align: center;
 }

@@ -1,86 +1,105 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- @TODO Add favicon -->
-	<!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
-	<link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/css/styles.css" rel="stylesheet">
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/bootstrap.js"></script>
-	<script src="assets/js/smoothscroll.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- start favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- end favicon -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navigation">
-	<!-- Fixed navbar -->
-	<nav class="navbar navbar-default navbar-fixed-top navbar-style">
-		<div class="container">
-			<div class ="custom-navbar">
-				<div class="navbar-header ">
-					<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle custom-button">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand logo" href="index.html">Blog</a>
-				</div>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-style">
+    <div class="container">
+        <div class="custom-navbar">
+            <div class="navbar-header ">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse"
+                        class="navbar-toggle custom-button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="index.html">Blog</a>
+            </div>
 
-				<div id="navbarCollapse" class="collapse navbar-collapse">
-					<form class="nav navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input type="search" class="form-control text-login" placeholder="Найти">
-						    <button type="submit" class="btn btn-default custom-button">Поиск</button>
-						</div>
-					</form>
-
-					<ul class="nav navbar-nav right-profile">
-                		<li class="dropdown">
-                    		<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        		<img class="img-circle profile-img" src="http://m.apicat.ru/styles/img/ic_avatar.jpg" alt="">
-                        		<div class="profile-name">Профиль</div>
-                        		<span class="caret"></span>
-                    		</a>
-                    		<ul class="dropdown-menu">
-            					<li><a href="#">Все статьи</a></li>
-            					<li><a href="#">Черновики</a></li>
-            					<li role="separator" class="divider"></li>
-            					<li><a href="personal_changes.html">Настройки</a></li>
-          					</ul>
-                		</li>
-            		</ul>			
-				</div>
-			</div>
-		</div>
-	</nav>
-
-    <!-- Main container -->
-	<div class="wrap">
-		<div class="container main">
-			<div class="row">
-				<aside class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="profile">
-                        	<img src="http://m.apicat.ru/styles/img/ic_avatar.jpg" alt="">
-                        	<div>
-                            	<h2 class="login">
-                                	Joe Smith
-                            	</h2>
-                            	<span>Имя: Joe </br></span>
-                            	<span>Фамилия: Smith</span>
-                            </div>
-                            <div class="btn-group-vertical custom-btn-group">
-                            	<button type="button" class="btn btn-primary btn-sm btn-block custom-button">Все статьи</button>
-                            	<button type="button" class="btn btn-primary btn-sm btn-block custom-button">Черновики</button>
-                            </div>
-                            <form action="personal_changes.html">
-                            	<button type="submit" class="btn btn-primary btn-sm btn-block custom-changes-btn">Настройки</button>
-                            </form>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <form class="nav navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="search" class="form-control text-login" placeholder="Найти">
+                        <button type="submit" class="btn btn-default custom-button">Поиск</button>
                     </div>
-            	</aside>
+                </form>
 
-				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <ul class="nav navbar-nav right-profile">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            <img class="img-circle profile-img" src="assets/img/default-avatars/avatar-01.png"
+                                 alt="">
+                            <div class="profile-name">Профиль</div>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Все статьи</a></li>
+                            <li><a href="#">Черновики</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="personal_changes.html">Настройки</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Main container -->
+<div class="wrap">
+    <div class="container main">
+        <div class="row">
+            <aside class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="profile">
+                    <img src="assets/img/default-avatars/avatar-01.png" alt="">
+                    <div>
+                        <h2 class="login">Joe Smith</h2>
+                        <span>Имя: Joe</span><br/>
+                        <span>Фамилия: Smith</span>
+                    </div>
+                    <div class="btn-group-vertical custom-btn-group">
+                        <button type="button" class="btn btn-primary btn-sm btn-block custom-button">Все статьи</button>
+                        <button type="button" class="btn btn-primary btn-sm btn-block custom-button">Черновики</button>
+                    </div>
+                    <form action="personal_changes.html">
+                        <button type="submit" class="btn btn-primary btn-sm btn-block custom-changes-btn">Настройки
+                        </button>
+                    </form>
+                </div>
+            </aside>
+
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <a href="#">
                     <div class="article">
                         <figure class="article-image">
@@ -96,14 +115,10 @@
                                 feugiat facilisis.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros.
                             </p>
-                            <footer class="article-info">
-                                <div class="author">
-                                    <img src="http://m.apicat.ru/styles/img/ic_avatar.jpg" alt="">
-                                    <div class="author-content">
-                                        <a href="personal_page.html">By Joe Smith</a>
-                                    </div>
-                                    <span class="comments">42 comments</span>
-                                </div>
+                            <footer class="article-info author">
+                                <img src="assets/img/default-avatars/avatar-01.png" alt="">
+                                <a class="author-content" href="personal_page.html">By Joe Smith</a>
+                                <span class="comments">42 comments</span>
                             </footer>
                         </div>
                     </div>
@@ -124,74 +139,72 @@
                                 feugiat facilisis.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros.
                             </p>
-                            <footer class="article-info">
-                                <div class="author">
-                                    <img src="http://m.apicat.ru/styles/img/ic_avatar.jpg" alt="">
-                                    <div class="author-content">
-                                        <a href="personal_page.html">By Joe Smith</a>
-                                    </div>
-                                    <span class="comments">42 comments</span>
-                                </div>
+                            <footer class="article-info author">
+                                <img src="assets/img/default-avatars/avatar-01.png" alt="">
+                                <a class="author-content" href="personal_page.html">By Joe Smith</a>
+                                <span class="comments">42 comments</span>
                             </footer>
                         </div>
                     </div>
                 </a>
-            	</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 
     <!-- Login dialog -->
-	<div class="popup" id="login-dialog">
-    <div class="login-wrap">
-        <div class="login-html">
-            <button type="button" class="close custom-close">×</button>
-            <input id="tab-1" type="radio" name="tab" class="login"><label for="tab-1" class="tab">Вход</label>
-            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Регистрация</label>
-            <div class="login-form" id="login-form">
-                <div class="sign-in-htm">
-                    <div class="group">
-                        <label for="loginLoginForm">Имя пользователя</label>
-                        <input id="loginLoginForm" class="text-login" type="text">
+    <div class="popup" id="login-dialog">
+        <div class="login-wrap">
+            <div class="login-html">
+                <button type="button" class="close custom-close">×</button>
+                <input id="tab-1" type="radio" name="tab" class="login"><label for="tab-1" class="tab">Вход</label>
+                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2"
+                                                                                 class="tab">Регистрация</label>
+                <div class="login-form" id="login-form">
+                    <div class="sign-in-htm">
+                        <div class="group">
+                            <label for="login-login-form">Имя пользователя</label>
+                            <input id="login-login-form" class="text-login" type="text">
 
-                        <label for="passwordLoginForm">Пароль</label>
-                        <input id="passwordLoginForm" class="text-login" type="password" data-type="password">
+                            <label for="password-login-form">Пароль</label>
+                            <input id="password-login-form" class="text-login" type="password" data-type="password">
 
-                        <input id="rememberLoginForm" type="checkbox">
-                        <label for="rememberLoginForm">Запомнить меня</label>
+                            <input id="remember-login-form" type="checkbox">
+                            <label for="remember-login-form">Запомнить меня</label>
 
-                        <button type="button" class="btn btn-primary btn-lg btn-block custom-button">Войти</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block custom-button">Войти</button>
+                        </div>
+                        <div class="hr">
+                        </div>
+                        <div class="foot-link">
+                            <a href="#">Забыли пароль?</a>
+                        </div>
                     </div>
-                    <div class="hr">
-                    </div>
-                    <div class="foot-lnk">
-                        <a href="#">Забыли пароль?</a>
-                    </div>
-                </div>
 
-                <div class="sign-up-htm">
-                    <div class="group">
-                        <label for="loginSignUpForm">Имя пользователя</label>
-                        <input id="loginSignUpForm" class="text-login" type="text">
+                    <div class="sign-up-htm">
+                        <div class="group">
+                            <label for="login-sign-up-form">Имя пользователя</label>
+                            <input id="login-sign-up-form" class="text-login" type="text">
 
-                        <label for="passwordSignUpForm">Пароль</label>
-                        <input id="passwordSignUpForm" class="text-login" type="password" data-type="password">
+                            <label for="password-sign-up-form">Пароль</label>
+                            <input id="password-sign-up-form" class="text-login" type="password" data-type="password">
 
-                        <label for="passwordRepeatSignUpForm">Повторите пароль</label>
-                        <input id="passwordRepeatSignUpForm" class="text-login" type="password" data-type="password">
+                            <label for="password-repeat-sign-up-form">Повторите пароль</label>
+                            <input id="password-repeat-sign-up-form" class="text-login" type="password"
+                                   data-type="password">
 
-                        <label for="emailSignUpForm">E-mail</label>
-                        <input id="emailSignUpForm" class="text-login" type="email">
+                            <label for="email-sign-up-form">E-mail</label>
+                            <input id="email-sign-up-form" class="text-login" type="email">
 
-                        <button type="button" class="btn btn-primary btn-lg btn-block custom-button">
-                            Зарегистрироваться
-                        </button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block custom-button">
+                                Зарегистрироваться
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-	<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
