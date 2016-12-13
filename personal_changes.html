@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- start favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- end favicon -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navigation">
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-style">
+    <div class="container">
+        <div class="custom-navbar">
+            <div class="navbar-header ">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse"
+                        class="navbar-toggle custom-button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="index.html">Blog</a>
+            </div>
+
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <form class="nav navbar-form navbar-left" role="search">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control search" placeholder="Найти">
+                                <span class="input-group-btn">
+          							<button class="btn btn-default custom-button search-btn" type="button">
+          								<span class="glyphicon glyphicon-search"></span>
+          							</button>
+        						</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="loginBtn">Вход</a></li>
+                    <li><a href="#" class="signUpBtn">Регистрация</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Main container -->
+<div class="wrap">
+    <div class="container main">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="profile">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h3>Профиль</h3>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <img class="img-thumbnail" src="assets/img/default-avatars/avatar-01.png" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div class="col-md-9 personal-info">
+                            <form class="form-horizontal" role="form">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label for="login" class="col-lg-4 control-label">Логин:</label>
+                                        <div class="col-lg-8">
+                                            <input id="login" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="first-name" class="col-lg-4 control-label">Имя:</label>
+                                        <div class="col-lg-8">
+                                            <input id="first-name" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name" class="col-lg-4 control-label">Фамилия:</label>
+                                        <div class="col-lg-8">
+                                            <input id="last-name" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="col-lg-4 control-label">Email:</label>
+                                        <div class="col-lg-8">
+                                            <input id="email" class="form-control" type="email" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="col-lg-4 control-label">Новый пароль:</label>
+                                        <div class="col-lg-8">
+                                            <input id="password" class="form-control" type="password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password-repeat" class="col-lg-4 control-label">Повторите
+                                            пароль:</label>
+                                        <div class="col-lg-8">
+                                            <input id="password-repeat" class="form-control" type="password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-9 control-label"></label>
+                                        <div class="col-md-3">
+                                            <input type="submit" class="btn btn-primary settings-btn custom-button"
+                                                   value="Сохранить">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Login dialog -->
+<div class="popup" id="login-dialog">
+    <div class="login-wrap">
+        <div class="login-html">
+            <button type="button" class="close custom-close">×</button>
+            <input id="tab-1" type="radio" name="tab" class="login"><label for="tab-1" class="tab">Вход</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Регистрация</label>
+            <div class="login-form" id="login-form">
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="loginLoginForm">Имя пользователя</label>
+                        <input id="loginLoginForm" class="text-login" type="text">
+
+                        <label for="passwordLoginForm">Пароль</label>
+                        <input id="passwordLoginForm" class="text-login" type="password" data-type="password">
+
+                        <input id="rememberLoginForm" type="checkbox">
+                        <label for="rememberLoginForm">Запомнить меня</label>
+
+                        <button type="button" class="btn btn-primary btn-lg btn-block custom-button">Войти</button>
+                    </div>
+                    <div class="hr">
+                    </div>
+                    <div class="foot-link">
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </div>
+
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <label for="loginSignUpForm">Имя пользователя</label>
+                        <input id="loginSignUpForm" class="text-login" type="text">
+
+                        <label for="passwordSignUpForm">Пароль</label>
+                        <input id="passwordSignUpForm" class="text-login" type="password" data-type="password">
+
+                        <label for="passwordRepeatSignUpForm">Повторите пароль</label>
+                        <input id="passwordRepeatSignUpForm" class="text-login" type="password" data-type="password">
+
+                        <label for="emailSignUpForm">E-mail</label>
+                        <input id="emailSignUpForm" class="text-login" type="email">
+
+                        <button type="button" class="btn btn-primary btn-lg btn-block custom-button">
+                            Зарегистрироваться
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
