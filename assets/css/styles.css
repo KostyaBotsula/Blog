@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-/* TYPOGRAPHY */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
-
 /* RESET */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, header, nav, article, aside, footer, section {
     margin: 0;
@@ -47,6 +44,11 @@ header, nav, article, aside, footer, section {
     src: url('../fonts/exljbris - Museo Cyrl 900.otf');
 }
 
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
 html {
     font-size: 0.9em;
     -moz-osx-font-smoothing: grayscale;
@@ -60,7 +62,7 @@ html {
 body {
     background-color: #edeef0;
     color: #666;
-    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.4;
