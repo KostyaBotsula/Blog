@@ -2,7 +2,6 @@
 
 /* TYPOGRAPHY */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
 
 /* RESET */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, header, nav, article, aside, footer, section {
@@ -216,6 +215,7 @@ a {
         float: left;
         margin-left: 0;
     }
+
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #fff;
     }
@@ -506,8 +506,8 @@ a {
     transform: rotateY(180deg);
     backface-visibility: hidden;
     transition: all .4s linear;
-    -webkit-backface-visibility: hidden; 
-    -moz-backface-visibility: hidden; 
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
