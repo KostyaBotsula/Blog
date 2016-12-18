@@ -5,10 +5,6 @@
     outline: 0
 }
 
-ol, ul {
-    list-style: none
-}
-
 blockquote:before,
 blockquote:after {
     content: ""
