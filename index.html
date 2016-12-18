@@ -25,6 +25,8 @@
     <!-- end favicon -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- title -->
+    <title>Blog</title>
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navigation">
@@ -268,9 +270,18 @@
     </div>
 </div>
 
+
 <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
 <script type="text/javascript" src="assets/js/jquery.dotdotdot.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".article-content").dotdotdot({
+            ellipsis    : '... ',
+        });
+    });
+</script>
+
 </body>
 </html>
