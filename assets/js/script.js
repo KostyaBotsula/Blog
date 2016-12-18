@@ -26,3 +26,9 @@ $('.signUpBtn').click(function(event) {
 $('.custom-close').click(function(event) {
 	$("#login-dialog").hide();
 });
+
+$(document).ready(function() {
+	$(".article-content").dotdotdot({
+		ellipsis	: '... ',
+	});
+});
