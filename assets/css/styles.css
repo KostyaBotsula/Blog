@@ -208,7 +208,7 @@ a {
 }
 
 .dropdown-menu {
-    min-width: 140px;
+    min-width: 143px;
 }
 
 @media (max-width: 767px) {
@@ -318,6 +318,7 @@ a {
 
 .article-content {
     margin-top: 5px;
+    height: 50px;
 }
 
 .article-info {
