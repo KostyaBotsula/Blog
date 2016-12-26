@@ -321,6 +321,7 @@ a {
     border-radius: 50%;
     margin-right: 0.6em;
     height: 40px;
+    width: 40px;
 }
 
 .author .comments {
@@ -560,4 +561,122 @@ a {
 
 .foot-link {
     text-align: center;
+}
+
+/* Tags */
+.tags ol, 
+.tags-form ul {
+    list-style: outside none none;
+}
+
+.tags
+{
+    background: none repeat scroll 0 0 #fff;
+    height: 34px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    display: table;
+    padding: 0;
+    width: 100%;
+}
+
+.tags li.tagAdd, .tags li.addedTag {
+    float: left;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+li.addedTag {
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+    color: #999;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 3px;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+}
+
+li.addedTag::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+}
+
+li.addedTag::after {
+    background: #fff;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #eee;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+li.addedTag:hover {
+    background-color: #3e6da3;
+    color: #fff;
+}
+
+li.addedTag:hover::after {
+    border-left-color: #3e6da3; 
+}
+
+.tags input {
+    border: 0;
+    margin-top: 5px;
+    height: 100%;
+}
+
+span.tagRemove {
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 0.5em;
+}
+
+span.tagRemove:hover {
+    color: #222222;
+}
+
+/* Article page */
+.article-form {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.article-form-img {
+    width: 100%;
+}
+
+.article-form iframe {
+    width: 100%;
+}
+
+.vresize {
+  resize: vertical; 
+}
+
+.block-center-alignment {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    
 }
