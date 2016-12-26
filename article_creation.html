@@ -90,30 +90,26 @@
 <div class="wrap">
     <div class="container main">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="profile">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h3>Создание статьи</h3>
-                        <div class="form-group">
-                            <label for="header">Заголовок</label>
-                            <input type="text" class="form-control" id="header" placeholder="Введите заголовок">
-                        </div>
-                        <div class="form-group">
-                            <label for="field1">Текст</label>
-                            <textarea class="form-control" name="text" id="text" placeholder="Введите текст"></textarea>
-                        </div>
-                        <div class="form-group tags-form">
-                            <label for="tag">Теги</label>
-                            <ul class="tags" id="tag">
-                                <li class="tagAdd">
-                                    <input type="text"> 
-                                </li>
-                            </ul>  
-                        </div>
-                        <button type="submit" class="btn btn-default custom-button">Отправить</button>
-                        <button type="submit" class="btn btn-default custom-changes-btn">Сохранить</button>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 profile">
+                    <h3>Создание статьи</h3>
+                    <div class="form-group">
+                        <label for="header">Заголовок</label>
+                        <input type="text" class="form-control" id="header" placeholder="Введите заголовок">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="field1">Текст</label>
+                        <textarea class="form-control" name="text" id="text" placeholder="Введите текст"></textarea>
+                    </div>
+                    <div class="form-group tags-form">
+                        <label for="tag">Теги</label>
+                        <ul class="tags" id="tag">
+                            <li class="tagAdd">
+                                <input type="text"> 
+                            </li>
+                        </ul>  
+                    </div>
+                    <button type="submit" class="btn btn-default custom-button">Отправить</button>
+                    <button type="submit" class="btn btn-default custom-changes-btn">Сохранить</button>
             </div>
         </div>
     </div>
@@ -201,47 +197,41 @@
 </script>
 
 <script>
-function existingTag(text){
+function existingTag(newTag) { 
+    var existing = false; 
+    newTag = newTag.toLowerCase();
 
-    var existing = false,
-    text = text.toLowerCase();
+    $(".addedTag").each(function () { 
+        var curTag = $(this).text().toLowerCase(); 
+        curTag = curTag.substring(0, curTag.length - 1); 
+        if (curTag == newTag) {
+            existing = true; 
+        } 
+    }); 
+    return existing; 
+} 
 
-    $(".addedTag").each(function(){
-        if ($(this).text().toLowerCase() == text) 
-        {
-            existing = true;
-        }
-    });
+$(function () { 
+    $('.tags input').focus(); 
+    $('.tags input').keyup(function () { 
+        var tag = $(this).val().trim(); 
 
-    return existing;
-}
+        if ((event.which == '13') && (tag != "")) { 
+            console.log(!existingTag(tag)); 
+            if (!existingTag(tag)) { 
+                $('<li class="addedTag"><span>' + tag + '</span><span class="tagRemove" onclick="$(this).parent().remove();">x</span></li>').insertBefore('.tags .tagAdd'); 
+                 $(this).val(""); 
+            } 
+            else { 
+                $(this).val(""); 
+            } 
+        } 
+    }); 
 
-$(function(){
-  $(".tags input").focus();
-  
-  $(".tags input").keyup(function(){
-
-        var tag = $(this).val().trim(),
-        length = tag.length;
-
-        if((event.which == '13') && (tag != ""))
-        {
-            if(!existingTag(tag))
-            {
-                $('<li class="addedTag"><span>' + tag + '</span><span class="tagRemove" onclick="$(this).parent().remove();">x</span></li>').insertBefore('.tags .tagAdd');
-                $(this).val("");    
-            }
-            else
-            {
-                $(this).val(tag);
-            }
-        }
-    });
-  
-  $('.tagRemove').click(function(event) {
-        event.preventDefault();
-        $(this).parent().remove();
-    });
+    $('.tagRemove').click(function (event) { 
+        event.preventDefault(); 
+        $(this).parent().remove(); 
+    }); 
 
 });
 

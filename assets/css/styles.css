@@ -673,3 +673,10 @@ span.tagRemove:hover {
 .vresize {
   resize: vertical; 
 }
+
+.block-center-alignment {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    
+}
