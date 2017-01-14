@@ -25,8 +25,9 @@
     <!-- end favicon -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/summernote/summernote.css" rel="stylesheet">
     <!-- title -->
-    <title>Профиль</title>
+    <title>Создать статью</title>
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navigation">
@@ -89,82 +90,30 @@
 <div class="wrap">
     <div class="container main">
         <div class="row">
-            <aside class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <div class="profile">
-                    <img src="assets/img/default-avatars/avatar-01.png" alt="">
-                    <div>
-                        <h2 class="login">Joe Smith</h2>
-                        <span>Имя: Joe</span><br/>
-                        <span>Фамилия: Smith</span>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 profile">
+                    <h3>Создание статьи</h3>
+                    <div class="form-group">
+                        <label for="header">Заголовок</label>
+                        <input type="text" class="form-control" id="header" placeholder="Введите заголовок">
                     </div>
-                    <div class="btn-group-vertical custom-btn-group">
-                        <button type="button" class="btn btn-primary btn-sm btn-block custom-button">Все статьи</button>
-                        <button type="button" class="btn btn-primary btn-sm btn-block custom-button">Черновики</button>
+                    <div class="form-group">
+                        <label for="text">Текст</label>
+                        <textarea class="form-control" name="text" id="text" placeholder="Введите текст"></textarea>
                     </div>
-                    <form action="personal_changes.html">
-                        <button type="submit" class="btn btn-primary btn-sm btn-block custom-changes-btn">Настройки
-                        </button>
-                    </form>
-                </div>
-            </aside>
-
-            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                <a href="#">
-                    <div class="article">
-                        <figure class="article-image">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-01-lo.jpg" alt="">
-                        </figure>
-                        <div class="article-body">
-                            <h2 class="article-title">
-                                Hello World 1
-                            </h2>
-                            <p class="article-content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
-                                pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
-                                feugiat facilisis.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros.
-                            </p>
-                            <footer class="article-info author">
-                                <a class="author-content" href="personal_page.html">
-                                    <img src="assets/img/default-avatars/avatar-01.png" width="40px" height="40px"
-                                         alt="">
-                                    <span> By Joe Smith</span>
-                                </a>
-                                <span class="comments">42 comments</span>
-                            </footer>
-                        </div>
+                    <div class="form-group tags-form">
+                        <label for="tag">Теги</label>
+                        <ul class="tags" id="tag">
+                            <li class="tagAdd">
+                                <input type="text"> 
+                            </li>
+                        </ul>  
                     </div>
-                </a>
-
-                <a href="#">
-                    <div class="article">
-                        <figure class="article-image is-4by3">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-02-lo.jpg" alt="">
-                        </figure>
-                        <div class="article-body">
-                            <h2 class="article-title">
-                                Hello World 2
-                            </h2>
-                            <p class="article-content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
-                                pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
-                                feugiat facilisis.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros.
-                            </p>
-                            <footer class="article-info author">
-                                <a class="author-content" href="personal_page.html">
-                                    <img src="assets/img/default-avatars/avatar-01.png" width="40px" height="40px"
-                                         alt="">
-                                    <span> By Joe Smith</span>
-                                </a>
-                                <span class="comments">42 comments</span>
-                            </footer>
-                        </div>
-                    </div>
-                </a>
+                    <button type="submit" class="btn btn-default custom-button">Отправить</button>
+                    <button type="submit" class="btn btn-default custom-changes-btn">Сохранить</button>
             </div>
         </div>
     </div>
+</div>
 
     <!-- Login dialog -->
     <div class="popup" id="login-dialog">
@@ -221,10 +170,14 @@
     </div>
 </div>
 
+
 <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/summernote/summernote.js"></script>
+<script type="text/javascript" src="assets/summernote/lang/summernote-ru-RU.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
-<script type="text/javascript" src="assets/js/jquery.dotdotdot.min.js"></script>
-<script type="text/javascript" src="assets/js/dots.js"></script>
+<script type="text/javascript" src="assets/js/tags.js"></script>
+<script type="text/javascript" src="assets/js/summernote-load.js"></script>
+
 </body>
 </html>

@@ -25,8 +25,9 @@
     <!-- end favicon -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/summernote/summernote.css" rel="stylesheet">
     <!-- title -->
-    <title>Профиль</title>
+    <title>Статья</title>
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navigation">
@@ -89,40 +90,81 @@
 <div class="wrap">
     <div class="container main">
         <div class="row">
-            <aside class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <div class="profile">
-                    <img src="assets/img/default-avatars/avatar-01.png" alt="">
-                    <div>
-                        <h2 class="login">Joe Smith</h2>
-                        <span>Имя: Joe</span><br/>
-                        <span>Фамилия: Smith</span>
-                    </div>
-                    <div class="btn-group-vertical custom-btn-group">
-                        <button type="button" class="btn btn-primary btn-sm btn-block custom-button">Все статьи</button>
-                        <button type="button" class="btn btn-primary btn-sm btn-block custom-button">Черновики</button>
-                    </div>
-                    <form action="personal_changes.html">
-                        <button type="submit" class="btn btn-primary btn-sm btn-block custom-changes-btn">Настройки
-                        </button>
-                    </form>
-                </div>
-            </aside>
+            <div class="col-lg-9 col-md-10 col-sm-12 col-xs-12 block-center-alignment">
 
-            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                <a href="#">
-                    <div class="article">
-                        <figure class="article-image">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-01-lo.jpg" alt="">
-                        </figure>
+                    <div class="article-form">
                         <div class="article-body">
-                            <h2 class="article-title">
-                                Hello World 1
-                            </h2>
-                            <p class="article-content">
+                            <h1>
+                                Title
+                            </h1>
+                            <hr>
+                            <ol>
+    <li>
+    <h1><s><em><strong>dfgdfgdfg</strong></em></s></h1>
+    </li>
+    <li><s><em><strong>rt</strong></em></s></li>
+    <li><s><em><strong>ret</strong></em></s></li>
+    <li><small><s><em><strong>erte</strong></em></s></small></li>
+    <li><s><em><strong>rt</strong></em></s></li>
+</ol>
+
+<hr />
+<ul>
+    <li>dfgdfgdgdf</li>
+    <li>gd</li>
+    <li><span class="marker">fg</span></li>
+    <li>dfg&nbsp;</li>
+</ul>
+
+<blockquote>
+<p>dfgdfgdf</p>
+</blockquote>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+    <tbody>
+        <tr>
+            <td>dfgdfg</td>
+            <td>dfgdfggdfgdfg</td>
+        </tr>
+        <tr>
+            <td>dfgfgddfgdfgdfgd</td>
+            <td>
+            <h3 style="color:#aaaaaa;font-style:italic;">dfgfgdfgdffgdfgdfg</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>dfgfgdfgd</td>
+            <td>dfgdfgdfgd</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>&nbsp;</p>
+                            <footer>
+                                <span>Теги: </span>
+                                <li class="addedTag"><span>Peppa</span></li>
+                                <li class="addedTag"><span>test</span></li>
+                            </footer>
+                            <footer class="article-info author">
+                                <a class="author-content" href="personal_page.html">
+                                    <img src="assets/img/default-avatars/avatar-01.png" width="40px" height="40px"
+                                         alt="">
+                                    <span> By Joe Smith</span>
+                                </a>
+                                <span class="comments">1 Aug at 4:20 pm</span>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="article-form">
+                        <div class="article-body">
+                            <h3>
+                                Комментарии
+                            </h3>
+                            <hr>
+                            <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
-                                pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
-                                feugiat facilisis.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros.
+                                pellentesque tortor vestibulum ut. Maecenas non massa sem.
                             </p>
                             <footer class="article-info author">
                                 <a class="author-content" href="personal_page.html">
@@ -130,26 +172,12 @@
                                          alt="">
                                     <span> By Joe Smith</span>
                                 </a>
-                                <span class="comments">42 comments</span>
+                                <span class="comments">1 Aug at 4:20 pm</span>
                             </footer>
-                        </div>
-                    </div>
-                </a>
 
-                <a href="#">
-                    <div class="article">
-                        <figure class="article-image is-4by3">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-02-lo.jpg" alt="">
-                        </figure>
-                        <div class="article-body">
-                            <h2 class="article-title">
-                                Hello World 2
-                            </h2>
-                            <p class="article-content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
-                                pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
-                                feugiat facilisis.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros.
+                            <hr>
+                            <p>
+                                Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem.
                             </p>
                             <footer class="article-info author">
                                 <a class="author-content" href="personal_page.html">
@@ -157,11 +185,22 @@
                                          alt="">
                                     <span> By Joe Smith</span>
                                 </a>
-                                <span class="comments">42 comments</span>
+                                <span class="comments">1 Aug at 4:20 pm</span>
                             </footer>
                         </div>
                     </div>
-                </a>
+
+                    <div class="article-form">
+                        <div class="article-body">
+                            <div class="form-group">
+                                <label for="header">Оставить комментарий</label>
+                                <textarea class="form-control vresize" name="text" id="text" placeholder="Введите текст"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-default custom-button">Отправить</button>
+                        </div>
+                    </div>
+
+                
             </div>
         </div>
     </div>
