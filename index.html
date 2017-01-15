@@ -248,19 +248,19 @@
                 <div class="sign-up-htm">
                     <div class="group">
                         <label for="login-sign-up-form">Имя пользователя</label>
-                        <input id="login-sign-up-form" class="text-login" type="text">
+                        <input id="login-sign-up-form" class="text-login" type="text" data-type="password" data-toggle="popover" data-trigger="manual" data-content="Введите логин.">
 
                         <label for="password-sign-up-form">Пароль</label>
-                        <input id="password-sign-up-form" class="text-login" type="password" data-type="password">
+                        <input id="password-sign-up-form" class="text-login" type="password" data-type="password" data-toggle="popover" data-trigger="manual" data-content="Введите пароль. Минимум 4 символа.">
 
                         <label for="password-repeat-sign-up-form">Повторите пароль</label>
                         <input id="password-repeat-sign-up-form" class="text-login" type="password"
-                               data-type="password">
+                               data-type="password" data-toggle="popover" data-trigger="manual" data-content="Неверное подтверждение пароля">
 
                         <label for="email-sign-up-form">E-mail</label>
-                        <input id="email-sign-up-form" class="text-login" type="email">
+                        <input id="email-sign-up-form" class="text-login" type="email" data-type="password" data-toggle="popover" data-trigger="manual" data-content="Введите e-mail.">
 
-                        <button type="button" class="btn btn-primary btn-lg btn-block custom-button">
+                        <button type="button" class="btn btn-primary btn-lg btn-block custom-button" onclick="registration()">
                             Зарегистрироваться
                         </button>
                     </div>
@@ -274,6 +274,7 @@
 <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/loginform.js"></script>
+<script type="text/javascript" src="assets/js/registration.js"></script>
 <script type="text/javascript" src="assets/js/jquery.dotdotdot.min.js"></script>
 <script type="text/javascript" src="assets/js/dots.js"></script>
 </body>
